@@ -223,6 +223,32 @@ body {
   color: white;
 }
 
+/* CATEGORIAS DE FILTROS DE PREÇO*/
+.filtros-preco {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.filtro-preco {
+  border: 1px solid #c89b6d;
+  background-color: white;
+  color: #5a3b2d;
+
+  padding: 10px 18px;
+  border-radius: 20px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filtro-preco:hover,
+.ativo {
+  background-color: #c89b6d;
+  color: white;
+}
+
 /* PRODUTOS */
 .produtos {
   display: grid;
