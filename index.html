@@ -25,7 +25,7 @@
 
     <!-- Barra de pesquisa -->
     <section class="pesquisa-area">
-      <input type="text" placeholder="Buscar produto...">
+      <input type="text" placeholder="Buscar produto..." class="busca">
     </section>
 
     <!-- Carrossel -->
@@ -74,13 +74,40 @@
     </section>
 
     <!-- Filtros -->
-    <section class="filtros">
-      <button class="filtro ativo">Todos</button>
-      <button class="filtro">Filtro 1</button>
-      <button class="filtro">Filtro 2</button>
-      <button class="filtro">Filtro 3</button>
-    </section>
+   <section id="filtros">
 
+  <button class="filtro" data-filtro="todos">Todos</button>
+
+  <button class="filtro" data-filtro="sem-chocolate">
+    Sem chocolate
+  </button>
+
+  <button class="filtro" data-filtro="branco">
+    Chocolate branco
+  </button>
+
+  <button class="filtro" data-filtro="preto">
+    Chocolate Preto
+  </button>
+
+  <button class="filtro" data-filtro="personalizados">
+    Personalizados
+  </button>
+
+  <button class="filtro" data-filtro="sazonais">
+    Sazonais
+  </button>
+
+  <section id="filtros-preco">
+  <button class="filtro-preco" data-preco="todos">Todos os preços</button>
+  <button class="filtro-preco" data-preco="barato">Até R$10</button>
+  <button class="filtro-preco" data-preco="medio">R$10 a R$20</button>
+  <button class="filtro-preco" data-preco="caro">Acima de R$20</button>
+</section>
+
+
+
+</section>
     <!-- Produtos -->
     <section class="produtos">
 
@@ -90,7 +117,7 @@
           <img src="images/produto1.jpeg" alt="Produto 1">
         </div>
 
-        <div class="info-produto">
+        <div class="info-produto sem-chocolate barato">
           <h3>Produto 1</h3>
           <span>R$ 4,50</span>
         </div>
@@ -101,7 +128,7 @@
           <img src="images/produto2.jpeg" alt="Produto 2">
         </div>
 
-        <div class="info-produto">
+        <div class="info-produto personalizados preto barato">
           <h3>Produto 2</h3>
           <span>R$ 8,00</span>
         </div>
@@ -112,7 +139,7 @@
           <img src="images/produto3.jpeg" alt="Produto 3">
         </div>
 
-        <div class="info-produto">
+        <div class="info-produto branco preto medio">
           <h3>Produto 3</h3>
           <span>R$ 12,00</span>
         </div>
@@ -123,7 +150,7 @@
           <img src="images/produto4.jpeg" alt="Produto 4">
         </div>
 
-        <div class="info-produto">
+        <div class="info-produto chocolate barato">
           <h3>Produto 4</h3>
           <span>R$ 6,00</span>
         </div>
@@ -134,7 +161,7 @@
           <img src="images/produto5.png" alt="Produto 5">
         </div>
 
-        <div class="info-produto">
+        <div class="info-produto chocolate medio">
           <h3>Produto 5</h3>
           <span>R$ 15,00</span>
         </div>
@@ -145,7 +172,7 @@
           <img src="images/produto6.png" alt="Produto 6">
         </div>
 
-        <div class="info-produto">
+        <div class="info-produto chocolate caro">
           <h3>Produto 6</h3>
           <span>R$ 25,00</span>
         </div>
