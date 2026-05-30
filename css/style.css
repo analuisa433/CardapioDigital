@@ -200,9 +200,10 @@ body {
 /* CATEGORIAS */
 .filtros {
   display: flex;
-  gap: 12px;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  gap: 14px 12px;
+  margin-bottom: 25px;
+  padding: 6px 0;
 }
 
 .filtro {
@@ -218,7 +219,7 @@ body {
 }
 
 .filtro:hover,
-.ativo {
+.filtro.ativo {
   background-color: #c89b6d;
   color: white;
 }
@@ -226,9 +227,10 @@ body {
 /* CATEGORIAS DE FILTROS DE PREÇO*/
 .filtros-preco {
   display: flex;
-  gap: 12px;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  gap: 14px 12px;
+  margin-bottom: 25px;
+  padding: 6px 0;
 }
 
 .filtro-preco {
@@ -244,7 +246,7 @@ body {
 }
 
 .filtro-preco:hover,
-.ativo {
+.filtro-preco.ativo {
   background-color: #c89b6d;
   color: white;
 }
@@ -252,8 +254,9 @@ body {
 /* PRODUTOS */
 .produtos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+  gap: 24px;
+  justify-content: center;
 }
 
 .card-produto {
@@ -261,7 +264,9 @@ body {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-
+  max-width: 280px;
+  width: 100%;
+  margin: 0 auto;
   transition: 0.3s;
 }
 
